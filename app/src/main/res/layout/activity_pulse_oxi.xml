@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.btranz.healthplus.PulseOxiActivity"
+    android:padding="6dp"
+    android:background="@drawable/bg111">
+
+    <com.btranz.healthplus.nonin_pulse_oxi.PpgView
+        android:id="@+id/ppgView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblHR"
+        android:layout_above="@+id/lblSPO" />
+
+    <TextView
+        android:id="@+id/lblHRUnits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:text="BPM"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="24sp"
+        android:layout_alignBottom="@+id/lblHR"
+        android:layout_toEndOf="@+id/lblHR" />
+
+    <TextView
+        android:id="@+id/lblHR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:text="68"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="75sp"
+        android:typeface="sans"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textViewConnecting" />
+
+    <TextView
+        android:id="@+id/lblSPOUnits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:text="%"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/lblSPO"
+        android:layout_alignBottom="@+id/lblSPO"
+        android:layout_toEndOf="@+id/lblSPO" />
+
+    <TextView
+        android:id="@+id/lblSPO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:text="100"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50sp"
+        android:typeface="sans"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textViewConnecting" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/connecting"
+        android:textStyle="bold"
+        android:id="@+id/textViewConnecting"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/red_heart"
+        android:layout_above="@+id/lblHRUnits"
+        android:layout_alignStart="@+id/lblHRUnits"
+        android:padding="6dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_above="@+id/lblHRUnits"
+        android:layout_toEndOf="@+id/lblHR"
+        android:src="@drawable/red_heartbeat"
+        android:padding="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SpO2"
+        android:textSize="30sp"
+        android:id="@+id/SpO_text"
+        android:layout_alignBaseline="@+id/lblSPOUnits"
+        android:layout_toStartOf="@+id/lblSPO" />
+
+
+
+</RelativeLayout>

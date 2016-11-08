@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+        <com.btranz.healthplus.alive_ecg.aliveclasses.EcgGridlines
+            android:id="@+id/ecgGrids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.btranz.healthplus.alive_ecg.EcgView
+            android:id="@+id/ecgView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ffe8e8e8"
+            android:layout_below="@+id/ecgView" />
+
+        <TextView
+            android:id="@+id/lblTitleECG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:text="ECG"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lblHRUnits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lblHR"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:text="BPM"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lblHR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ecgGrids"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/lblHRUnits"
+            android:text="68"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="38sp"
+            android:typeface="sans" />
+
+        <com.btranz.healthplus.alive_ecg.AccView
+            android:id="@+id/accView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/divider"
+            android:layout_marginTop="1dp" />
+
+        <TextView
+            android:id="@+id/lblTitleAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/accView"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Acceleration"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lblLegendX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lblTitleAcc"
+            android:layout_toLeftOf="@+id/lblLegendY"
+            android:drawableLeft="@drawable/line_red"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text="X"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lblLegendY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lblTitleAcc"
+            android:layout_toLeftOf="@+id/lblLegendZ"
+            android:drawableLeft="@drawable/line_green"
+            android:paddingLeft="12dp"
+            android:paddingRight="6dp"
+            android:text="Y"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lblLegendZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lblTitleAcc"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/line_blue"
+            android:paddingLeft="12dp"
+            android:paddingRight="6dp"
+            android:text="Z"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

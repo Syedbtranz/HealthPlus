@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.btranz.healthplus.login.LoginActivity"
+    android:background="#404040">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:textColor="#F6F6E8"
+        android:ems="10"
+        android:id="@+id/LoginUsernameEditText"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColor="#F6F6E8"
+        android:ems="10"
+        android:id="@+id/LoginPasswordEditText"
+        android:layout_below="@+id/LoginUsernameEditText"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="#000000"
+        android:id="@+id/LogInButton"
+        android:background="@drawable/button_state"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:id="@+id/textView8"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:src="@drawable/kakashi_250"
+        android:layout_below="@+id/checkBoxKeepMeLoggedIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_kmli"
+        android:textColor="#f6f6e8"
+        android:id="@+id/checkBoxKeepMeLoggedIn"
+        android:layout_below="@+id/LoginPasswordEditText"
+        android:layout_alignStart="@+id/LoginPasswordEditText" />
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.btranz.healthplus.blood_pressure.CalibrationDialog"
+    android:background="#091022">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/bp_calibration_dialog_info"
+        android:id="@+id/textViewCalibrationInfo"
+        android:layout_below="@+id/view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textColorHint="#f6f6e8"
+        android:id="@+id/editTextSystolic"
+        android:layout_below="@+id/textViewCalibrationInfo"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/bp_calibration_dialog_hint" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:background="@drawable/button_state"
+        android:textColor="#000000"
+        android:id="@+id/buttonConfirmCalibration"
+        android:layout_below="@+id/editTextDiastolic"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textColorHint="#f6f6e8"
+        android:ems="10"
+        android:id="@+id/editTextDiastolic"
+        android:layout_below="@+id/editTextSystolic"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/bp_calibration_dialog_hint_diastole"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/title_activity_calibration_dialog"
+        android:id="@+id/textView14"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#039BE5"
+        android:id="@+id/view"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

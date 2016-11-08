@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:key="heart_monitor"
+        android:summary="Alive Heart Monitor has not been set"
+        android:title="Alive Heart Monitor"
+        android:selectable="false">
+    </Preference>
+
+    <CheckBoxPreference
+        android:key="keep_screen_on"
+        android:defaultValue="true"
+        android:summary="Prevent the screen from automatically turning off when recording."
+        android:title="Keep screen on" />
+
+    <Preference
+        android:key="about_app"
+        android:summary="The Alive Heart Monitor is a data acquisition, wireless transmitter and recording device of patient electrocardiograph (ECG) and acceleration signals. The signals can be stored to an SD memory card on the device and/or transmitted via a Bluetooth® connection to a mobile phone or PC for real-time display, recording and analysis.\n2014 Alive Technologies Pty Ltd."
+        android:title="About" >
+    </Preference>
+
+</PreferenceScreen>

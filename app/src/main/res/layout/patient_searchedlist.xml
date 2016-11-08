@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#091022">
+
+    <include layout="@layout/toolbar1" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:divider="#3a445e"
+        android:layout_margin="15dp"
+        android:id="@+id/patient_listView" />
+
+    <LinearLayout
+        android:id="@+id/no_dat_layout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+            <TextView
+                android:textSize="30dp"
+                android:text="No Patients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+        </LinearLayout>
+        <View
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

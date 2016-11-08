@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.btranz.healthplus" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+
+    <application
+        android:name="com.btranz.healthplus.login.Initialization"
+        android:allowBackup="true"
+        android:icon="@mipmap/deskicon111"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme" >
+        <activity
+            android:name="com.btranz.healthplus.activity.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.MainMenuActivity"
+            android:theme="@style/AppTheme"
+            android:label="Heart Rate"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.btranz.healthplus.alive_ecg.HeartMonitorService" />
+        <service android:name="com.btranz.healthplus.nonin_pulse_oxi.PulseOximeterService" />
+
+        <activity
+            android:name="com.btranz.healthplus.AliveECGActivity"
+            android:label="@string/title_activity_alive_ecg_"
+            android:parentActivityName="com.btranz.healthplus.MainMenuActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.btranz.healthplus.MainMenuActivity" />
+
+        <activity
+            android:name="com.btranz.healthplus.PulseOxiActivity"
+            android:label="@string/title_activity_pulse_oxy_"
+            android:parentActivityName="com.btranz.healthplus.MainMenuActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.btranz.healthplus.MainMenuActivity" />
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.MonitoringActivity"
+            android:theme="@style/AppTheme"
+            android:label="Heart Rate"
+            android:parentActivityName="com.btranz.healthplus.MainMenuActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.btranz.healthplus.MainMenuActivity" />
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.SettingActivity"
+            android:label="Heart Rate"
+            android:parentActivityName="com.btranz.healthplus.MainMenuActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.btranz.healthplus.MainMenuActivity" />
+        </activity>
+        <activity android:name="com.btranz.healthplus.BTDeviceListActivity" />
+        <activity
+            android:name="com.btranz.healthplus.nonin_pulse_oxi.PulseOximeterPreferences"
+            android:theme="@style/prefTheme"
+            android:label="@string/title_activity_pulse_oximeter_settings"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.support.PARENT_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.alive_ecg.HeartMonitorPreferences"
+            android:label="@string/title_activity_heart_monitor_settings"
+            android:theme="@style/prefTheme"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.support.PARENT_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.wizards.WizardAliveXActivity"
+            android:label="@string/title_activity_wizard__alive_x"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.wizards.WizardPulseOxiActivity"
+            android:label="@string/title_activity_wizard__pulse_oxy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.btranz.healthplus.blood_pressure.CalibrationDialog"
+            android:theme="@style/Theme.AppCompat.Dialog" >
+            <intent-filter>
+                <action android:name="android.support.PARENT_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.login.ResetPasswordActivity"
+            android:label="@string/title_activity_reset_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.login.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.Pateints_List111"
+            android:label="My Patients List"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.HistoryActivity"
+            android:label="@string/history_activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.HrManualEntry"
+            android:label="Heart Rate"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.wizards.WizardAliveX2Activity"
+            android:label="@string/title_activity_wizard__alive_x_2"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.btranz.healthplus.activity.MainActivity"
+            android:label="Health Plus"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.btranz.healthplus.activity.ContactEdit"
+            android:label="Health Plus"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.ContactEntry"
+            android:label="Health Plus"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.Activity_Main"
+            android:label="Patient Details"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.MapActivity"
+            android:label="Mean Arterial Pressure"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.ValuesStoreMFS"
+            android:label="Morse Falls Scale"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.ValuesStoreMAP"
+            android:label="Mean Arterial Pressure"
+            android:parentActivityName="com.btranz.healthplus.activity.FormsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.PatientProfile111"
+            android:label="Morse Falls Scale"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.AddPatientActivity"
+            android:label="Morse Falls Scale"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.ValuesStoreGCS"
+            android:label="Glasgow Coma Scale/Score"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.ValuesStoreATRIA"
+            android:label="ATRIA Bleeding Risk Score"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.ViewResult"
+            android:label="Heart Plus"
+            android:screenOrientation="portrait">
+        </activity>
+      <!--  <activity
+            android:name=".activity.PatientDetails"
+            android:label="Heart Plus"
+            android:screenOrientation="portrait">
+        </activity>-->
+
+        <activity
+            android:name="com.btranz.healthplus.activity.ValuesStoreBMI"
+            android:label="Body Mass Index"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.ValuesStoreNEWS"
+            android:label="National Early Warning Score"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.ValuesStoreCAGE"
+            android:label="CAGE"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.ATRIA"
+            android:label="ATRIA Bleeding Risk Score"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.LoginActivity"
+            android:label="Login "
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.RegisterActivity"
+            android:label="Registration"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.btranz.healthplus.activity.CalculatorActivity"
+            android:label="Calculator"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.btranz.healthplus.activity.Notes"
+            android:label="Calculator"
+            android:parentActivityName="com.btranz.healthplus.activity.Activity_Main"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.FormsActivity"
+            android:label="Forms"
+
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.btranz.healthplus.activity.AtriaActivity"
+            android:label="Atria"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.BmiActivity"
+            android:label="Body Mass Index"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.CageActivity"
+            android:label="CAGE"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.GcsActivity"
+            android:label="Glasgow Coma Scale/Score"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.DashActivity"
+            android:label="DASH Prediction Score for Recurrent VTE"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.MFS"
+            android:label="Morse Falls Scale"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.btranz.healthplus.activity.MyNotes"
+            android:label="Clinical Notes"
+            android:parentActivityName="com.btranz.healthplus.activity.Activity_Main"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.VitalsDataHistory"
+            android:parentActivityName="com.btranz.healthplus.activity.Activity_Main"
+            android:label="Vital History"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.btranz.healthplus.activity.EWSActivity1"
+            android:parentActivityName="com.btranz.healthplus.activity.FormsActivity"
+            android:label="National Early Warning Score"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.btranz.healthplus.activity.Search_Activity"
+            android:label="Search"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.btranz.healthplus.activity.Patient_SearchedList"
+            android:label="Patients Searched List"
+            android:screenOrientation="portrait"/>
+<activity android:name=".activity.PatientList2426"
+    android:label="PatientS List"/>
+
+    </application>
+
+</manifest>

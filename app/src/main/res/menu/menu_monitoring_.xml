@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Collective_Activity">
+
+    <item
+        android:id="@+id/action_bp"
+        app:showAsAction="always"
+        android:title="@string/measureBP"
+        android:icon="@drawable/ic_hm_running" />
+
+    <item
+        android:id="@+id/action_startstop"
+        app:showAsAction="ifRoom"
+        android:title="@string/startstop"
+        android:icon="@drawable/ic_play_arrow_white_24dp" />
+
+</menu>

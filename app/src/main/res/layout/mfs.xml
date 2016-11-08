@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#091022"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar1" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollview">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6"
+        android:layout_margin="20dp">
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:layout_weight=".6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History of falling"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:id="@+id/hostoryoffalling"/>
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+
+            android:layout_gravity="top|center|right"
+            android:id="@+id/hostory"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=".6"
+        >
+
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secondary diagnosis "
+            android:id="@+id/secondarydiagnosis"
+            android:textColor="#FFFFFF"
+           android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_gravity="center_vertical"
+
+            />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+
+            android:layout_gravity="top|center|right"
+            android:id="@+id/secondary"/>
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1.3"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ambulatory aid"
+            android:textColor="#FFFFFF"
+            android:id="@+id/ambulatory"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ambulatoryaid">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bed rest/nurse assist"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:id="@+id/bedrest" />
+
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView17"
+                android:layout_gravity="right" />
+-->
+            <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:text="Crutches/cane/walker"
+            android:id="@+id/crutches" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Furniture"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:id="@+id/furnitire" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".7">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="IV/Heparin Lock "
+             android:id="@+id/HeparinLock"
+             android:textColor="#FFFFFF"
+             android:textStyle="bold"
+             android:layout_gravity="center_vertical"
+            android:textSize="15dp"
+             />
+
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 0 "
+
+            android:id="@+id/Heparinlock"
+            android:layout_gravity="top|center|right"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1.3"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gait/Transferring "
+            android:id="@+id/gait"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            />
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gaittransfer">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:text="Normal/bedrest/immobile "
+                android:textColor="#FFFFFF"
+                android:id="@+id/normal" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weak"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:id="@+id/weak" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Impaired"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:id="@+id/impaired" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1.3"
+
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mental status "
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:id="@+id/mentalstatus"
+            android:textSize="15dp"
+
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#424242"
+            android:id="@+id/mental">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
+            android:text="Oriented to own ability "
+            android:textColor="#FFFFFF"
+            android:id="@+id/oriented" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgets limitations"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:id="@+id/forgets" />
+        </RadioGroup>
+
+        </LinearLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="Submit"
+    android:id="@+id/Submit"
+    android:textColor="#FFFFFF"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/submit_button"/>
+
+    </LinearLayout>
+            </LinearLayout></ScrollView>
+</LinearLayout>

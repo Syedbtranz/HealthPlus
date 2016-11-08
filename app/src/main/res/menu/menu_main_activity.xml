@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/patient_notes"
+        android:title="addPatient"
+        android:icon="@drawable/note"
+        android:orderInCategory="99"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@null"
+        android:enabled="false"
+        android:title=""
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/logout"
+        android:orderInCategory="99"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>

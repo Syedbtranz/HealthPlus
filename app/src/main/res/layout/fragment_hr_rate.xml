@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:weightSum="3"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#091022"
+    >
+
+    <LinearLayout
+        android:layout_weight=".4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"></LinearLayout>
+    <LinearLayout
+        android:layout_weight="1.8"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hearmgv"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/heart_rate111"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Check your Heart Rate"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView15"
+            android:textStyle="bold"
+        android:layout_marginTop="15dp"
+          />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/heart_imgv"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/play111"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight=".8"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/manualBtn"
+            android:layout_margin="25dp"
+            android:background="#FFFFFF"
+            android:text="Enter Manual"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

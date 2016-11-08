@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group android:checkableBehavior="single">
+
+    <item android:title="Videos" android:icon="@drawable/contact" android:id="@+id/contactus"/>
+       <!-- <item android:title="Shortcuts of Mac" android:icon="@drawable/mac" android:id="@+id/nav_manage"/>
+        <item android:title="Shortcuts of Windows" android:icon="@drawable/win" android:id="@+id/nav_slideshow"/>
+    <item android:title="Rate Us" android:icon="@drawable/rate" android:id="@+id/nav_gall"/>
+    <item android:title="Subscribe" android:icon="@drawable/rs" android:id="@+id/contactu"/>
+    <item android:title="About Us" android:icon="@drawable/ab" android:id="@+id/nav_gallery"/>
+        <item android:title="DocContact Us" android:icon="@drawable/cu" android:id="@+id/contactus1" />-->
+
+</group>
+
+
+
+   <!--<item android:title="Subscribe">-->
+
+
+    <!--<menu>-->
+
+    <!--<item android:title="Subscribe" android:icon="@drawable/yt"-->
+          <!--android:id="@+id/nav_share"/>-->
+
+
+
+<!--</menu>-->
+
+<!--</item>&ndash;&gt;-->
+
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/title_activity_pulse_oximeter_settings" >
+
+    <Preference
+        android:key="pulse_oximeter"
+        android:summary="Pulse Oximeter has not been set"
+        android:title="Nonin Pulse Oximeter"
+        android:selectable="false">
+    </Preference>
+
+    <CheckBoxPreference
+        android:key="keep_screen_on"
+        android:defaultValue="true"
+        android:summary="Prevent the screen from automatically turning off when recording."
+        android:title="Keep screen on" />
+
+    <Preference
+        android:key="about_app"
+        android:summary="As the world's first wireless finger pulse oximeter, the Onyx II Model 9560 with Bluetooth® wireless technology allows clinicians to remotely monitor the blood oxygen saturation levels and pulse rates of patients with chronic diseases such as Chronic Obstructive Pulmonary Disease (COPD), Congestive Heart Failure (CHF) or Asthma. Wireless oximetry gives patients a new level of freedom and control as they go about their daily lives. The Onyx II 9560 is commonly used in eHealth applications around the world.\n© 2015 Nonin Medical Inc."
+        android:title="About" >
+    </Preference>
+
+
+</PreferenceScreen>

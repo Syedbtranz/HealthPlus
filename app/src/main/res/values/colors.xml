@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3a445e</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#D1C4E9 </color>
+    <color name="colorHint">#006064</color>
+    <color name="colorEditText">#000000</color>
+    <color name="colorgreen">#4CAF50</color>
+    <color name="colorred">#DD2C00</color>
+    <color name="accent">#FF4081</color>
+    <color name="fragment_bg">#e5e5e5</color>
+    <color name="coloryellow">#FFFF00</color>
+    <color name="statusBarColor">#4169E1</color>
+    <color name="toolBarColor">#4682B4</color>
+
+    <color name="list_background_pressed">#4682B4</color>
+    <color name="list_background">#FFFF00</color>
+
+
+</resources>

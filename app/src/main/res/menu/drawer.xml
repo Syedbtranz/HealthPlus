@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/Patientdetails"
+            android:checked="true"
+            android:icon="@drawable/profile"
+            android:title="@string/title_patient_profile" />
+        <item
+            android:id="@+id/Healthdata"
+            android:checked="true"
+            android:icon="@drawable/data"
+            android:title="@string/title_health_data" />
+        <item
+            android:id="@+id/Clinicaldescription"
+            android:icon="@drawable/support"
+            android:checked="true"
+            android:title="@string/title_clinical_support" />
+
+        <item
+            android:id="@+id/Checkheartrate"
+            android:icon="@drawable/hr"
+            android:checked="true"
+            android:title="@string/title_check_hr" />
+       <!-- <item
+            android:id="@+id/Other"
+            android:icon="@drawable/other"
+            android:checked="true"
+            android:title="@string/title_other" />-->
+        <item
+            android:id="@+id/manual"
+            android:icon="@drawable/edit"
+            android:checked="true"
+            android:title="@string/title_manual" />
+        <item
+            android:id="@+id/Contact"
+            android:icon="@drawable/contact"
+            android:checked="true"
+            android:title="@string/title_contact" />
+
+    </group>
+
+   <!-- <item android:title="@string/nav_sub_menu">
+        <menu>
+            <item
+                android:id="@+id/navigation_sub_item_01"
+                android:icon="@drawable/ic_emoticon"
+                android:title="@string/nav_sub_menu_item01" />
+            <item
+                android:id="@+id/navigation_sub_item_02"
+                android:icon="@drawable/ic_emoticon"
+                android:title="@string/nav_sub_menu_item02" />
+        </menu>
+    </item>-->
+
+</menu>

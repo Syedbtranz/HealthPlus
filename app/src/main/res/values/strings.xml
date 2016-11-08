@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Health Plus</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_start">Start</string>
+    <string name="action_stop">Stop</string>
+
+    <string name="male" formatted="false">Hgb &lt;13 g/dL (Male)</string>
+    <string name="female" formatted="false">Hgb&lt;12 g/dL (Female)</string>
+    <string name="gfr" formatted="false">GFR &lt;30 mL/min or dialysis-dependent</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="rb1">&lt;= 8 bpm</string>
+
+  <!--  <string name="rb2">&lt;= 8 bpm</string>
+    <string name="rb3">&lt;= 8 bpm</string>
+    <string name="rb4">&lt;= 8 bpm</string>
+    <string name="rb5">&lt;= 8 bpm</string>
+    <string name="rb6">&lt;= 8 bpm</string>
+    <string name="rb7">&lt;= 8 bpm</string>
+    <string name="rb8">&lt;= 8 bpm</string>-->
+
+    <string name="title_activity_alive_ecg_">AliveECG_Activity</string>
+    <string name="title_activity_pulse_oxy_">PulseOxy_Activity</string>
+    <string name="title_activity_collective_">Monitoring</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_setting_">Settings</string>
+    <string name="po_settings_button">Pulse Oximeter</string>
+    <string name="hm_settings_button">Heart Monitor</string>
+    <string name="bp_settings_button">Blood Pressure Cuff</string>
+    <string name="device_settings_title">Device Settings</string>
+    <string name="title_activity_device_list">DeviceList</string>
+    <string name="title_activity_pulse_oximeter_settings">Pulse Oximeter Settings</string>
+    <string name="title_activity_blood_pressure_cuff_settings">Blood Pressure Cuff Settings</string>
+    <string name="title_activity_heart_monitor_settings">Heart Monitor Settings</string>
+    <string name="title_activity_pulse_oxi_settings">PulseOxi Settings</string>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+    <string name="selectanyone">Doctor</string>
+
+
+    <string name="button_scan">Search</string>
+    <string name="scanning">"Searching&#8230;"</string>
+    <string name="select_device">Devices Available</string>
+    <string name="none_found">No Devices found</string>
+    <string name="hmservice_running">Heart Monitor is currently connected</string>
+    <string name="poservice_running">Pulse Oximeter is currently connected</string>
+    <string name="scan_for_device">Scan for Bluetooth Devices</string>
+    <string name="startstop">start</string>
+    <string name="connecting">Connecting…</string>
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+    <string name="title_activity_wizard__alive_x">Heart Monitor Setup</string>
+    <string name="title_activity_wizard__alive_x__bluetooth">Wizard_AliveX_Bluetooth</string>
+    <string name="SpO2">SpO₂</string>
+    <string name="title_activity_wizard__pulse_oxy">Pulse Oximeter Setup</string>
+    <string name="title_activity_wizard__pulse_oxy__bt">Wizard_PulseOxy_BT</string>
+    <string name="measureBP">Start BP</string>
+    <string name="value_placeholder">---</string>
+    <string name="BPM">BPM</string>
+    <string name="percent_symbol">%</string>
+
+    <string-array name="navDrawerIcons">
+
+        <item>@drawable/contact</item>
+        <item>@drawable/support</item>
+        <item>@drawable/hr</item>
+        <item>@drawable/profile</item>
+        <item>@drawable/other</item>
+        <item>@drawable/data</item>
+        <item>@drawable/other</item>
+
+
+
+    </string-array>
+    <string-array name="navDrawerItems">
+        <item>Patient Profile</item>
+        <item>Vital Signs</item>
+        <item>Clinical description Support</item>
+        <item>Check HR</item>
+        <item>Contact Clinician</item>
+        <item>Manual Enter Data</item>
+
+    </string-array>
+
+    <string name="bp_calibration_dialog_title">Blood Pressure Calibration</string>
+    <string name="bp_calibration_dialog_hint">Systolic Blood Pressure</string>
+    <string name="title_activity_calibration_dialog">Calibration</string>
+    <string name="bp_calibration_dialog_hint_diastole">Diastolic Pressure</string>
+    <string name="bp_calibration_dialog_info">Please enter the values given by your blood pressure monitor.</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_opening">OpeningActivity</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="bp_units">mmHG</string>
+    <string name="history_activity">History</string>
+    <string name="history">History</string>
+    <string name="monitoring">Monitoring</string>
+    <string name="HM_setup">Heart Monitor Setup</string>
+    <string name="PO_setup">Pulse Oximeter Setup</string>
+    <string name="please_select_device">Please select device shown below:</string>
+    <string name="step1">Step 1:</string>
+    <string name="title_activity_wizard__alive_x_2">Heart Monitor Setup</string>
+    <string name="next">Next</string>
+    <string name="step2">Step 2:</string>
+    <string name="registration">Registration</string>
+    <string name="checkbox_kmli">Keep me logged in</string>
+
+    <!--Menu Strings-->
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_patient_profile">Patient Profile</string>
+    <string name="nav_item_health_data">Health Data</string>
+    <string name="nav_item_clinicalsupport">Clinical Decision Support</string>
+    <string name="nav_item_check_hr">Heart Guardian</string>
+    <string name="nav_item_contact">Contact Clinician</string>
+    <string name="nav_item_manual">Manual Data</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_patient_profile</item>
+        <item>@string/nav_item_health_data</item>
+        <item>@string/nav_item_clinicalsupport</item>
+        <item>@string/nav_item_check_hr</item>
+        <item>@string/nav_item_check_hr</item>
+        <item>@string/nav_item_contact</item>
+    </string-array>
+
+    <string name="title_patient_profile">Patients Profile</string>
+    <string name="title_health_data">Vital Signs </string>
+    <string name="title_clinical_support">Clinical Decision Support</string>
+    <string name="title_check_hr">Heart Guardian</string>
+    <string name="title_other">Other</string>
+    <string name="title_contact">Contact Clinician</string>
+    <string name="title_manual">Vitals Data Entry</string>
+
+    <string-array name="title_array">
+        Doctor, Consultant, Specialist, Lead Nurse, Head Nurse, Nurse, Medical Officer and Other (allow to write their own title
+        <item>Select Title</item>
+        <item>Doctor</item>
+        <item>Consultant</item>
+        <item>Specialist</item>
+        <item>Lead Nurse</item>
+        <item>Head Nurse</item>
+        <item>Nurse</item>
+        <item>Medical Officer</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="gt">&gt; 25</string>
+</resources>

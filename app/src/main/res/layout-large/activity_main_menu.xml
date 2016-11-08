@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainMenuActivity"
+    android:background="#091022">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_ECG"
+            android:visibility="gone"
+            android:src="@drawable/ecg_64"
+            android:background="@drawable/roundcorners_red"
+            android:layout_below="@+id/textView4"
+            android:layout_toStartOf="@+id/button_history" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/HM_setup"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/PO_Checkbox"
+            android:layout_toStartOf="@+id/textView4" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/HM_Checkbox"
+            android:layout_marginLeft="8dp"
+            android:button="@drawable/checkbox_color"
+            android:layout_alignBottom="@+id/button_ECG"
+            android:layout_alignEnd="@+id/button_ECG" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_PulseOxy"
+            android:layout_gravity="center_horizontal"
+            android:background="#091022"
+            android:src="@drawable/pulse111"
+            android:layout_alignTop="@+id/button_ECG"
+            android:layout_toEndOf="@+id/button_history" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Pulse Oximeter Setup"
+            android:id="@+id/textView6"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/button_PulseOxy"
+            android:layout_toEndOf="@+id/textView4" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/PO_Checkbox"
+            android:button="@drawable/checkbox_color"
+            android:layout_alignBottom="@+id/button_PulseOxy"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:checked="false" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_monitoring"
+            android:layout_marginTop="10dp"
+            android:background="#091022"
+            android:src="@drawable/monitoring111"
+            android:layout_gravity="center_horizontal"
+            android:layout_above="@+id/textView7"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/monitoring"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/textView7"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="21dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_history"
+            android:visibility="gone"
+            android:background="@drawable/roundcorners_yellow"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/history_64"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/history"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/button_history"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+</LinearLayout>

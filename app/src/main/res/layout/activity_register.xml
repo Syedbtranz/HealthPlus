@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.btranz.healthplus.login.RegisterActivity"
+    android:background="#404040">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:textColor="#F6F6E8"
+        android:ems="10"
+        android:id="@+id/UsernameRegisterEditText"
+        android:layout_below="@+id/registration"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textColor="#F6F6E8"
+        android:ems="10"
+        android:id="@+id/EmailRegisterEditText"
+        android:layout_below="@+id/UsernameRegisterEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColor="#F6F6E8"
+        android:ems="10"
+        android:id="@+id/PasswordRegisterEditText"
+        android:layout_below="@+id/EmailRegisterEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Age"
+        android:textColor="#F6F6E8"
+        android:ems="10"
+        android:id="@+id/AgeRegisterEditText"
+        android:layout_below="@+id/PasswordRegisterEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Height (cm)"
+        android:textColor="#F6F6E8"
+        android:ems="10"
+        android:id="@+id/HeightRegisterEditText"
+        android:layout_below="@+id/AgeRegisterEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@drawable/button_state"
+        android:id="@+id/SignUpRegisterButton"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/registration"
+        android:textSize="40sp"
+        android:id="@+id/registration"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

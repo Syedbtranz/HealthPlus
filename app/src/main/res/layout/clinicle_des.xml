@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#091022"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="45dp"
+        android:layout_gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:src="@drawable/search111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_imgv" />
+            <View
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+            <ImageView
+                android:src="@drawable/form111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/forms_imgv" />
+        </LinearLayout>
+<View
+    android:layout_weight="1"
+    android:layout_width="wrap_content"
+    android:layout_height="10dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginBottom="65dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:src="@drawable/calculator111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calculator_imgv" />
+            <View
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+            <ImageView
+                android:src="@drawable/notes111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/notes_imgv" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
